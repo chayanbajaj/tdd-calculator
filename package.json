@@ -1,5 +1,12 @@
 {
   "devDependencies": {
+    "@types/jest": "^29.5.12",
     "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "test": "jest",
+    "@types/jest": "^27.0.3",
+    "jest": "^27.0.3",
+    "ts-jest": "^27.0.3"
   }
 }

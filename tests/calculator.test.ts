@@ -26,6 +26,10 @@ describe("String Calculator", () => {
       expect(add("//;;\n1;;2;;3")).toBe(6);
     });
 
+    it("should handle large numbers", () => {
+      expect(add("1000000,2000000,3000000")).toBe(6000000);
+    });
+    
     it("should throw an exception for negative numbers", () => {
       expect(() => add("-1")).toThrow("negative numbers not allowed -1");
     });

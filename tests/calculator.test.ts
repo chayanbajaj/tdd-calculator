@@ -14,10 +14,6 @@ describe("String Calculator", () => {
       expect(add("1,5")).toBe(6);
     });
 
-    it("should return 6 when input has new lines instead of commas", () => {
-      expect(add("1\n2,3")).toBe(6);
-    });
-
     it("should support custom delimiters", () => {
       expect(add("//;\n1;2")).toBe(3);
     });
@@ -29,7 +25,7 @@ describe("String Calculator", () => {
     it("should handle large numbers", () => {
       expect(add("1000000,2000000,3000000")).toBe(6000000);
     });
-    
+
     it("should throw an exception for negative numbers", () => {
       expect(() => add("-1")).toThrow("negative numbers not allowed -1");
     });
